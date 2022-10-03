@@ -1,0 +1,43 @@
+.gallery {
+  &__image-container {
+    height: 300px;
+    width: 100%;
+    background-image: url("../images/image-product-1.jpg");
+    background-position-y: -35px;
+    background-size: cover;
+  }
+
+  &__previous {
+    @include arrow-btn(197px, 15px, false);
+  }
+  &__next {
+    @include arrow-btn(197px, 320px, false);
+  }
+
+  &__thumnails {
+    display: none;
+    @media (min-width: 1115px) {
+        display: flex;
+        justify-content: space-between;
+    }
+  }
+  &__thumnail {
+    width: 90px;
+    border-radius: 16px;
+    &:hover {
+      cursor: pointer;
+      opacity: 0.6;
+      border: 2px solid $Orange;
+    }
+  }
+  @media (min-width: 1115px) {
+    cursor: pointer;
+    &__image-container {
+      background-position-y: 0;
+      border-radius: 16px;
+      width: 446px;
+      height: 446px;
+      margin-bottom: 32px;
+    }
+  }
+}

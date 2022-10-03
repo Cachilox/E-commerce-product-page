@@ -1,0 +1,32 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    font-family: $Font;
+}
+
+.main-container {
+    width: 375px;
+    margin: auto;
+    position: relative;
+    @media (min-width: 1115px) {
+        width: 1115px;
+    }
+}
+
+.content {
+    @media (min-width: 1115px) {
+        display: flex;
+        padding: 90px 50px;
+        gap: 124px;
+    }
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

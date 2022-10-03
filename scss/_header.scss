@@ -1,0 +1,71 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 68px;
+    padding: 0 24px;
+    @media (min-width: 1115px) {
+        height: 112px;
+        border-bottom: 1px solid $Grayish-blue;
+    }
+
+    &__navigation {
+        width: 175px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media (min-width: 1115px) {
+            width: 590px;
+        }
+    }
+
+    &__menu {
+        &:hover{
+            cursor: pointer;
+        }
+        @media (min-width: 1115px) {
+            display: none;
+        }
+    }
+    &__cart-avatar {
+        display: flex;
+        align-items: center;
+        width: 70px;
+        justify-content: space-between;
+        @media (min-width: 1115px) {
+            width: 125px;
+        }
+    }
+    &__cart {
+        position: relative;
+        &:hover {
+            cursor: pointer;
+        }
+        &--notification {
+            display: none;
+            background-color: $Orange;
+            width: 15px;
+            height: 12px;
+            border-radius: 16px;
+            position: absolute;
+            top: -2px;
+            right: -5px;
+            font-size: 0.6em;
+            text-align: center;
+            color: $White;
+            font-weight: 400;
+        }   
+    }
+    &__avatar {
+        width: 24px;
+        @media (min-width: 1115px) {
+            width: 48px;
+        }
+        &:hover{
+            cursor: pointer;
+            border: 2px solid $Orange;
+            border-radius: 50%;
+        }
+    }
+}

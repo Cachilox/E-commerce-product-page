@@ -1,0 +1,24 @@
+.input {
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    background-color: $Light-grayish-blue;
+    &__minus {
+        @include changeNumber(24px, 5px)
+    }
+    &__number {
+        width: 100%;
+        border: none;
+        outline: none;
+        background-color: $Light-grayish-blue;
+        font-size: 1.2em;
+        font-weight: 700;
+        font-family: $Font;
+        text-align: center;
+    }
+    &__plus {
+        @include changeNumber(19px, 3px)
+    }
+}

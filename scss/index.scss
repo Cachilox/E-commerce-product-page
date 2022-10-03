@@ -1,0 +1,22 @@
+@import "variables";
+@import "reset";
+@import "header";
+@import "navbar";
+@import "modal-navbar";
+@import "mixins";
+@import "gallery";
+@import "details";
+@import "input";
+@import "modal-cart";
+@import "modal-gallery";
+
+.show{
+    display: block;
+}
+.cart-empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 135px;
+    font-weight: 700;
+}

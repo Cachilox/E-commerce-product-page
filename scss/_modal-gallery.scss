@@ -1,0 +1,50 @@
+.modal-gallery {
+  width: 550px;
+
+  &__background {
+    @include modal-background;
+    display: none;
+    // display: grid;
+    place-content: center;
+  }
+  &__close-container {
+    text-align: right;
+    height: 30px;
+  }
+  &__close {
+    width: 16px;
+    &:hover {
+      cursor: pointer;
+      content: url("../images/icon-close-hover.svg");
+    }
+  }
+  &__image-container {
+    background-image: url("../images/image-product-1.jpg");
+    height: 446px;
+    background-size: cover;
+    border-radius: 15px;
+    margin-bottom: 32px;
+    position: relative;
+  }
+  &__thumnails {
+    display: flex;
+    justify-content: space-between;
+    width: 460px;
+    margin: auto;
+  }
+  &__thumnail {
+    width: 90px;
+    border-radius: 16px;
+    &:hover {
+      cursor: pointer;
+      opacity: 0.6;
+      border: 2px solid $Orange;
+    }
+  }
+  &__previous {
+    @include arrow-btn(190px, -20px, true);
+  }
+  &__next {
+    @include arrow-btn(190px, 528px, true);
+  }
+}
