@@ -15,11 +15,11 @@
     width: 16px;
     &:hover {
       cursor: pointer;
-      content: url("../images/icon-close-hover.svg");
+      content: url("./images/icon-close-hover.svg");
     }
   }
   &__image-container {
-    background-image: url("../images/image-product-1.jpg");
+    background-image: url("./images/image-product-1.jpg");
     height: 446px;
     background-size: cover;
     border-radius: 15px;

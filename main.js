@@ -92,7 +92,7 @@ thumbnails = [...thumbnails]
 
 thumbnails.forEach(thumbnail => {
     thumbnail.addEventListener("click", (e)=>{
-        imageContainer.style.backgroundImage = `url("../images/image-product-${e.target.id}.jpg")`
+        imageContainer.style.backgroundImage = `url("./images/image-product-${e.target.id}.jpg")`
     })
 })
 
@@ -103,7 +103,7 @@ modalthumbnails = [...modalthumbnails]
 
 modalthumbnails.forEach(modalthumbnail => {
     modalthumbnail.addEventListener("click", (e)=>{
-        modalImageContainer.style.backgroundImage = `url("../images/image-product-${e.target.id.slice(-1)}.jpg")`
+        modalImageContainer.style.backgroundImage = `url("./images/image-product-${e.target.id.slice(-1)}.jpg")`
     });
 });
 
@@ -154,10 +154,10 @@ function drawProductInModal() {
 
 function changeNextImage(imgContainer) {
     imgIndex === 4 ? imgIndex = 1 : imgIndex++
-    imgContainer.style.backgroundImage = `url("../images/image-product-${imgIndex}.jpg")`
+    imgContainer.style.backgroundImage = `url("./images/image-product-${imgIndex}.jpg")`
 }
 
 function changePreviousImage(imgContainer) {
     imgIndex === 1 ? imgIndex = 4 : imgIndex--
-    imgContainer.style.backgroundImage = `url("../images/image-product-${imgIndex}.jpg")`
+    imgContainer.style.backgroundImage = `url("./images/image-product-${imgIndex}.jpg")`
 }

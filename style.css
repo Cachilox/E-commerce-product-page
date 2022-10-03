@@ -33,7 +33,7 @@ body {
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 13px;
   text-align: center;
 }
 
@@ -181,7 +181,7 @@ body {
 .gallery__image-container {
   height: 300px;
   width: 100%;
-  background-image: url("../images/image-product-1.jpg");
+  background-image: url("./images/image-product-1.jpg");
   background-position-y: -35px;
   background-size: cover;
 }
@@ -456,10 +456,10 @@ body {
 }
 .modal-gallery__close:hover {
   cursor: pointer;
-  content: url("../images/icon-close-hover.svg");
+  content: url("./images/icon-close-hover.svg");
 }
 .modal-gallery__image-container {
-  background-image: url("../images/image-product-1.jpg");
+  background-image: url("./images/image-product-1.jpg");
   height: 446px;
   background-size: cover;
   border-radius: 15px;
